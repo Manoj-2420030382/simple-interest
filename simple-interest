@@ -1,0 +1,21 @@
+
+---
+
+## 5. `simple-interest.sh`
+```bash
+#!/bin/bash
+# Simple Interest Calculator Script
+
+echo "Enter Principal amount:"
+read principal
+
+echo "Enter Rate of Interest:"
+read rate
+
+echo "Enter Time (in years):"
+read time
+
+# Calculate simple interest
+si=$(( (principal * rate * time) / 100 ))
+
+echo "The Simple Interest is: $si"
